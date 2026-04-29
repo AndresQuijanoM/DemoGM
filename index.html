@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+    <div id="ui-overlay">
+      <div id="hud">
+        <span id="score">Score: 0</span>
+        <span id="level">Level: 1</span>
+        <span id="lives">Lives: ♥♥♥</span>
+      </div>
+      <div id="best-score">Best: 0</div>
+    </div>
+    <div id="title-screen" class="screen">
+      <h1>PIXEL ADVENTURE</h1>
+      <p class="blink">Press SPACE to Start</p>
+      <div class="best-display">Best Score: <span id="title-best">0</span></div>
+    </div>
+    <div id="instructions-screen" class="screen hidden">
+      <h2>HOW TO PLAY</h2>
+      <div class="controls">
+        <p><span>← →</span> or <span>A D</span> : Move</p>
+        <p><span>↑</span> or <span>W</span> or <span>SPACE</span> : Jump</p>
+      </div>
+      <div class="objectives">
+        <p>◆ Collect coins ★</p>
+        <p>◆ Jump on enemies ▼ to defeat them</p>
+        <p>◆ Reach the right edge →</p>
+      </div>
+      <p class="blink">Press SPACE to Start</p>
+    </div>
+    <div id="level-complete-screen" class="screen hidden">
+      <h2>LEVEL COMPLETE!</h2>
+      <p>Score: <span id="level-score">0</span></p>
+      <p class="blink">Press SPACE for Next Level</p>
+    </div>
+    <div id="game-over-screen" class="screen hidden">
+      <h2>GAME OVER</h2>
+      <p>Final Score: <span id="final-score">0</span></p>
+      <p>Best Score: <span id="gameover-best">0</span></p>
+      <p class="blink">Press SPACE to Restart</p>
+    </div>
+    <div id="victory-screen" class="screen hidden">
+      <h2>YOU WIN!</h2>
+      <p>Congratulations!</p>
+      <p>Final Score: <span id="victory-score">0</span></p>
+      <p>Best Score: <span id="victory-best">0</span></p>
+      <p class="blink">Press SPACE to Play Again</p>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
